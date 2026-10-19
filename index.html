@@ -126,19 +126,22 @@
 .panel:after,.panel.right:after{
   background:linear-gradient(90deg,rgba(5,17,23,.86) 0%,rgba(5,17,23,.60) 42%,rgba(5,17,23,.12) 100%)!important;
 }
-/* Dézoom de 30 % du visuel du slide 03, sans toucher à sa hauteur.
-   Une deuxième couche plein cadre évite les bandes vides sur les côtés. */
+/* Rubrique 03 : un SEUL fond, sans image dupliquee.
+   L'image occupe la largeur du panneau; cadrage vers le haut pour
+   eviter la bande d'icones situee au bas du fichier source. */
+#expertises .panel{background:#101e29!important;}
 #expertises .photo.photo-expertises{
-  background-image:url('images/com360_item3_multicanal.jpg'),url('images/com360_item3_multicanal.jpg')!important;
-  background-size:70% auto,cover!important;
-  background-position:center center,center center!important;
-  background-repeat:no-repeat,no-repeat!important;
+  background-image:url('images/com360_item3_multicanal.jpg')!important;
+  background-size:100% auto!important;
+  background-position:center 30%!important;
+  background-repeat:no-repeat!important;
+  background-color:#101e29!important;
   transform:none!important;
 }
 @media(max-width:800px){
   .panel .panel-copy,.panel.right .panel-copy{left:25px!important;right:25px!important;}
   .panel:after,.panel.right:after{background:linear-gradient(90deg,rgba(5,17,23,.89),rgba(5,17,23,.48))!important;}
-  #expertises .photo.photo-expertises{background-size:90% auto,cover!important;}
+  #expertises .photo.photo-expertises{background-size:auto 100%!important;background-position:55% top!important;}
 }
 </style>
 </head><body class="no-js"><a class="skip" href="#parcours">Aller au contenu</a><div class="progress" id="progress"></div><nav class="site-nav" id="nav"><a class="brand" href="#accueil">CHRISTOPHE FLORENTIN<span>COMMUNICATION · ÉDITORIAL · CRÉATION</span></a><div class="links"><a href="#parcours">Parcours</a><a href="#expertises">Expertises</a><a href="#realisations">Réalisations</a><a href="#projet">Projet</a><a href="#contact">Contact</a></div></nav>
